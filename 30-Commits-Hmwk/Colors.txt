@@ -1,0 +1,12 @@
+Red
+Orange
+Yellow
+
+Blue
+Purple
+White
+brown
+black
+silver
+gold
+Emerald
