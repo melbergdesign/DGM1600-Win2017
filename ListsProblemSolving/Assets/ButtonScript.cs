@@ -3,7 +3,10 @@ using System.Collections;
 
 public class ButtonScript : MonoBehaviour {
 
+    public Homework animalInventory;
+    public string newAnimal;
+
 	public void OnMouseClick(){
-		print ("click");
+        animalInventory.myAnimalsList.Add(newAnimal);
 	}
 }
