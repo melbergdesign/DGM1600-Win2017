@@ -7,6 +7,7 @@ public class LogicalOperators : MonoBehaviour {
 
 	public string string1;
 	public string string2;
+    //public string string3;
 
 	// Use this for initialization
 	public void OnButtonClick () {
@@ -20,6 +21,15 @@ public class LogicalOperators : MonoBehaviour {
 		if (string1 != "Thing 1" && string2 != "Thing 2") {
 			print ("Oh what a shame, what a shame, what a shame.");
 		}
+        /*if (string1 =="Thing 2" && string2 =="Thing 1"); This statement does not work b/c it conflict with the above OR statement
+        {
+            print("Switch your things.");
+        }*/
+
+        /*/if (string3) does not work b/c this is a boolean statement
+        {
+            print("That works");
+        }*/
 	
 	}
 	
