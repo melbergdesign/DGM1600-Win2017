@@ -2,12 +2,20 @@
 using System.Collections;
 
 public class Add : MonoBehaviour {
-    public int num1 = 2;
-    public int num2 = 3;
+    public int entry1;
+    public int entry2;
 
     public void OnClick()
     {
-        //run the adding function
+        print (AddNums(4, 6));
+        
+    }
+
+    //adding function
+    public int AddNums(int num1, int num2)
+    {
+        int sum = num1 + num2;
+        return sum;
     }
 
 	
