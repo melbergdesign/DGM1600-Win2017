@@ -7,7 +7,8 @@ public class Add : MonoBehaviour {
 
     public void OnClick()
     {
-        print (AddNums(4, 6));
+        print (entry1);
+        print (entry2);
         
     }
 
