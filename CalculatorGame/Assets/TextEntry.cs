@@ -7,9 +7,8 @@ public class TextEntry : MonoBehaviour {
     {
         float temp = float.Parse(textLine);
         print (temp);
+        //return temp;
 
-        /*
-         * If the first entry is = 0; assign # to entry 2
-         */
+       
     }
 }
