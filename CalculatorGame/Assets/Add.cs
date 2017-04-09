@@ -5,6 +5,10 @@ public class Add : MonoBehaviour {
     public float entry1;
     public float entry2;
 
+    //public TextEntry myFirstEntry = new TextEntry();
+    //public TextEntry mySecondEntry = new TextEntry();
+
+
     public void OnClick()
     {
         print(AddNums(entry1, entry2));
