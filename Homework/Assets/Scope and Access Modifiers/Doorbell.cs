@@ -12,7 +12,7 @@ public class Doorbell : MonoBehaviour {
         print("Bob works.");
         foreach (string pet in myHouse.BobsPets)
         {
-            print(myHouse.BobsPets.pet);
+           // print(myHouse.BobsPets.pet);
         }
         //7-pet is not accessible outside the foreach loop
     }
