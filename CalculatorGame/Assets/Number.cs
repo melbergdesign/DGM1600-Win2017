@@ -3,10 +3,16 @@ using System.Collections;
 
 public class Number : MonoBehaviour {
 
-    public int numButton;
+	public string numButton;
+	public TextEntry entry1 = new TextEntry();
 
-    public void OnClick()
+	public void OnClick()
     {
         print(numButton);
+		//assign entry to text box; need classes
+
     }
+	/*public float upTownFunc(){
+		numButton = entry1.TextConvert(numButton);
+	}*/
 }
