@@ -6,8 +6,8 @@ public class MathOperations : MonoBehaviour {
     //switch statement that assigns the math operator used
 
     public int mathFunction;
-    
-    
+
+    public float[] numberArray = new float[2];//change to list
         
     public void ButtonClick()
     {

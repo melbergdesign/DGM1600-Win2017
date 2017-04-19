@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class TextEntry : MonoBehaviour {
 
     //receives and converts input into floats
+    public MathOperations mathOps;
 
     public InputField numberEntry;
 
@@ -17,6 +18,9 @@ public class TextEntry : MonoBehaviour {
         float temp = float.Parse(numberEntry.text);
 
         print("This is a float " + temp);
+
+        mathOps.numberArray.Add
+        
     }
 
 	
