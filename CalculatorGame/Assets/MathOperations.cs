@@ -7,7 +7,7 @@ public class MathOperations : MonoBehaviour {
 
     public int mathFunction;
 
-    public float[] numberArray = new float[2];//change to list
+    //public float[] numberArray = new float[2];//change to list
         
     public void ButtonClick()
     {

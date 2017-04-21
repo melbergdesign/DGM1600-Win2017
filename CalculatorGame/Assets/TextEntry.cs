@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class TextEntry : MonoBehaviour {
 
     //receives and converts input into floats
-    public MathOperations mathOps;
+    //adds float to a list
 
     public InputField numberEntry;
 
     
-
     public void PrintEntry()
     {
         //print("This is a string " + numberEntry.text);
@@ -19,9 +19,8 @@ public class TextEntry : MonoBehaviour {
 
         print("This is a float " + temp);
 
-        mathOps.numberArray.Add
+        //mathOps.numberArray.Add
         
     }
 
-	
 }
