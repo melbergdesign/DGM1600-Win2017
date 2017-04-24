@@ -10,8 +10,8 @@ public class MathOperations : MonoBehaviour {
     //public float[] numberArray = new float[2];//change to list
 
     public HoldList mathList;
-
-    public float answer;
+    public float answer;//answer does not last outside of switch
+    public string solution;
         
     public void ButtonClick()
     {
@@ -46,9 +46,9 @@ public class MathOperations : MonoBehaviour {
                 print("The quotient is " + answer);
                 break;
 
-            /*case 5:
+            case 5:
                 print(answer);
-                break;*/
+                break;
 
             default:
                 print("That is not a valid operation");
