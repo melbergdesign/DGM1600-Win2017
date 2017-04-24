@@ -8,6 +8,10 @@ public class MathOperations : MonoBehaviour {
     public int mathFunction;
 
     //public float[] numberArray = new float[2];//change to list
+
+    public HoldList mathList;
+
+    public float answer;
         
     public void ButtonClick()
     {
@@ -20,6 +24,8 @@ public class MathOperations : MonoBehaviour {
         {
             case 1://add
                 print("add");
+                answer = mathList.myHoldList[0] + mathList.myHoldList[1];
+                print("The sum is " + answer);
                 break;
 
             case 2://subtract
@@ -32,6 +38,10 @@ public class MathOperations : MonoBehaviour {
 
             case 4://divide
                 print("divide");
+                break;
+
+            case 5:
+                print(answer);
                 break;
 
             default:
