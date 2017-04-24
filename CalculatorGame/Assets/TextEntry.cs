@@ -26,7 +26,7 @@ public class TextEntry : MonoBehaviour {
         print("This is a float " + numEntered);
 
         //mathOps.numberArray.Add
-        entryList.AddToList;
+        entryList.AddToList(numEntered);
         
     }
 

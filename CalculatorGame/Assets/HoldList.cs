@@ -9,10 +9,10 @@ public class HoldList : MonoBehaviour {
     public TextEntry myEntry2;
 
       
-	public void AddToList()
+	public void AddToList(float num)
     {
-        myHoldList.Add(myEntry1.numEntered);
-        myHoldList.Add(myEntry2.numEntered);
+        myHoldList.Insert(0, myEntry1.numEntered);
+        myHoldList.Insert(1, myEntry2.numEntered);
     }
 
     public void PrintList()

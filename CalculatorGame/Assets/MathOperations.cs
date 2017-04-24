@@ -23,26 +23,32 @@ public class MathOperations : MonoBehaviour {
         switch (mathFunction)//changes depending on operator button selected
         {
             case 1://add
-                print("add");
+                //print("add");
                 answer = mathList.myHoldList[0] + mathList.myHoldList[1];
                 print("The sum is " + answer);
                 break;
 
             case 2://subtract
-                print("subtract");
+                //print("subtract");
+                answer = mathList.myHoldList[0] - mathList.myHoldList[1];
+                print("The difference is " + answer);
                 break;
 
             case 3://multiply
-                print("multiply");
+                //print("multiply");
+                answer = mathList.myHoldList[0] * mathList.myHoldList[1];
+                print("The product is " + answer);
                 break;
 
             case 4://divide
-                print("divide");
+                //print("divide");
+                answer = mathList.myHoldList[0] / mathList.myHoldList[1];
+                print("The quotient is " + answer);
                 break;
 
-            case 5:
+            /*case 5:
                 print(answer);
-                break;
+                break;*/
 
             default:
                 print("That is not a valid operation");
