@@ -15,8 +15,10 @@ public class MathOperations : MonoBehaviour {
         
     public void ButtonClick()
     {
-
         MathSelector();
+        print ("The answer is " + answer);
+        solution = answer.ToString();
+        print("The solution is " + solution);
      }
     public void MathSelector()
     {
@@ -25,30 +27,30 @@ public class MathOperations : MonoBehaviour {
             case 1://add
                 //print("add");
                 answer = mathList.myHoldList[0] + mathList.myHoldList[1];
-                print("The sum is " + answer);
+                //print("The sum is " + answer);
                 break;
 
             case 2://subtract
                 //print("subtract");
                 answer = mathList.myHoldList[0] - mathList.myHoldList[1];
-                print("The difference is " + answer);
+                //print("The difference is " + answer);
                 break;
 
             case 3://multiply
                 //print("multiply");
                 answer = mathList.myHoldList[0] * mathList.myHoldList[1];
-                print("The product is " + answer);
+                //print("The product is " + answer);
                 break;
 
             case 4://divide
                 //print("divide");
                 answer = mathList.myHoldList[0] / mathList.myHoldList[1];
-                print("The quotient is " + answer);
+                //print("The quotient is " + answer);
                 break;
 
-            case 5:
+            /*case 5:
                 print(answer);
-                break;
+                break;*/
 
             default:
                 print("That is not a valid operation");

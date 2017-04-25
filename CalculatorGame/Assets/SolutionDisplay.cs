@@ -13,6 +13,6 @@ public class SolutionDisplay : MonoBehaviour {
     public void Start()
     {
         //Solution.text = theOps.answer.ToString();
-        Solution.text = test;
+        Solution.text = theOps.solution;
     }
 }
