@@ -9,8 +9,7 @@ public class Number : MonoBehaviour {
 	
 	public void OnClick()
     {
-        print(numButton);
-		
+        print(numButton);		
     }
 	
 }
