@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class HoldList : MonoBehaviour {
 
+    //holds the list of number entries
+
     public List<float> myHoldList = new List<float>();
     public TextEntry myEntry1;
     public TextEntry myEntry2;
@@ -20,10 +22,4 @@ public class HoldList : MonoBehaviour {
         print("This is in the list " + myHoldList[0]);
         print("This is in the list " + myHoldList[1]);
     }
-
-    /*public void Update()
-    {
-        
-    }*/
-    //myHoldList.Add("yes");
 }

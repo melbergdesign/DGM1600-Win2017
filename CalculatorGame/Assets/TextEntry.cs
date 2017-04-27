@@ -9,23 +9,16 @@ public class TextEntry : MonoBehaviour {
     //adds float to a list
 
     public InputField numberEntry;
-    //public string textEntered;
     public float numEntered;
     public HoldList entryList;
 
     
     public void PrintEntry()
     {
-        //print("This is a string " + numberEntry.text);
-        //textEntered = numberEntry.text;
-
-        //print("This is the var " + textEntered);
-
         numEntered = float.Parse(numberEntry.text);
 
         print("This is a float " + numEntered);
 
-        //mathOps.numberArray.Add
         entryList.AddToList(numEntered);
         
     }

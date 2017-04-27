@@ -10,15 +10,17 @@ public class MathOperations : MonoBehaviour {
     //public float[] numberArray = new float[2];//change to list
 
     public HoldList mathList;
-    public float answer;//answer does not last outside of switch
-    public string solution;
+    //public float answer;//answer does not last outside of switch
+    //public string solution;
+    public SolutionDisplay AnsText;
         
     public void ButtonClick()
     {
         MathSelector();
-        print ("The answer is " + answer);
-        solution = answer.ToString();
-        print("The solution is " + solution);
+        //print ("The answer is " + answer);
+        //solution = answer.ToString();
+        //print("The solution is " + solution);
+        print("The AnsText.ans is " + AnsText.ans);
      }
     public void MathSelector()
     {
@@ -26,25 +28,25 @@ public class MathOperations : MonoBehaviour {
         {
             case 1://add
                 //print("add");
-                answer = mathList.myHoldList[0] + mathList.myHoldList[1];
+                AnsText.ans = mathList.myHoldList[0] + mathList.myHoldList[1];
                 //print("The sum is " + answer);
                 break;
 
             case 2://subtract
                 //print("subtract");
-                answer = mathList.myHoldList[0] - mathList.myHoldList[1];
+                AnsText.ans = mathList.myHoldList[0] - mathList.myHoldList[1];
                 //print("The difference is " + answer);
                 break;
 
             case 3://multiply
                 //print("multiply");
-                answer = mathList.myHoldList[0] * mathList.myHoldList[1];
+                AnsText.ans = mathList.myHoldList[0] * mathList.myHoldList[1];
                 //print("The product is " + answer);
                 break;
 
             case 4://divide
                 //print("divide");
-                answer = mathList.myHoldList[0] / mathList.myHoldList[1];
+                AnsText.ans = mathList.myHoldList[0] / mathList.myHoldList[1];
                 //print("The quotient is " + answer);
                 break;
 
