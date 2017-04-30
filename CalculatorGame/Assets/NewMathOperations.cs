@@ -16,6 +16,12 @@ public class NewMathOperations : MonoBehaviour {
     public SolutionDisplay MySolDisplay;
     public Button thisButton;
 
+    //This can be improved with an Array and ForEach Loop
+    public EnemyNumber firstEnemy;
+    public EnemyNumber secondEnemy;
+    public EnemyNumber thirdEnemy;
+    public EnemyNumber fourthEnemy;
+
     public void AddButtonClick()
     {
         sum = EntryList.myHoldList[0] + EntryList.myHoldList[1];
@@ -26,6 +32,7 @@ public class NewMathOperations : MonoBehaviour {
 
         //Set interactable to false
         thisButton.interactable = false;
+        firstEnemy.ValueCheck();
     }
 
     public void SubtractButtonClick()
@@ -36,6 +43,10 @@ public class NewMathOperations : MonoBehaviour {
 
         MySolDisplay.Solution.text = diff.ToString();
         thisButton.interactable = false;
+        firstEnemy.ValueCheck();
+        secondEnemy.ValueCheck();
+        thirdEnemy.ValueCheck();
+        fourthEnemy.ValueCheck();
     }
 
     public void MultiplyButton()
@@ -46,19 +57,28 @@ public class NewMathOperations : MonoBehaviour {
 
         MySolDisplay.Solution.text = product.ToString();
         thisButton.interactable = false;
+        firstEnemy.ValueCheck();
+        secondEnemy.ValueCheck();
+        thirdEnemy.ValueCheck();
+        fourthEnemy.ValueCheck();
     }
 
     public void DivideButton()
     {
         quotient = EntryList.myHoldList[0] / EntryList.myHoldList[1];
 
-        print("The first entry is " + EntryList.myHoldList[0]);
-        print("The second entry is " + EntryList.myHoldList[1]);
+        //print("The first entry is " + EntryList.myHoldList[0]);
+        //print("The second entry is " + EntryList.myHoldList[1]);
 
         print("The quotient is " + quotient);
 
         MySolDisplay.Solution.text = quotient.ToString();
         thisButton.interactable = false;
-
+        firstEnemy.ValueCheck();
+        secondEnemy.ValueCheck();
+        thirdEnemy.ValueCheck();
+        fourthEnemy.ValueCheck();
     }
+
+    
 }

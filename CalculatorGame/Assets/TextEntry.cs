@@ -17,8 +17,7 @@ public class TextEntry : MonoBehaviour {
     {
         numEntered = float.Parse(numberEntry.text);
 
-        print("This is a float " + numEntered);
-
+        //print("This is a float " + numEntered);
         entryList.AddToList(numEntered);
         
     }
