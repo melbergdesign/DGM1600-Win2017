@@ -32,7 +32,7 @@ public class EnemyNumber : MonoBehaviour {
     }
     void Update()
     {
-        thisObject.transform.Translate(0,-0.3f,0);
+        //thisObject.transform.Translate(0,-0.3f,0);
     }
 
 }
