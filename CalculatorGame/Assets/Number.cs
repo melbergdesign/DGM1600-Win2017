@@ -3,10 +3,15 @@ using System.Collections;
 
 public class Number : MonoBehaviour {
 
-    public int numButton;
+    //number buttons
 
-    public void OnClick()
+	public string numButton;
+    public TextEntry numEntry;
+	
+	public void OnClick()
     {
         print(numButton);
+        numEntry.numberEntry.text = numButton;		
     }
+	
 }
