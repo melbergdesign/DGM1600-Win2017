@@ -27,7 +27,7 @@ public class EnemyNumber : MonoBehaviour {
     {
         if (enemy == Add.sum || enemy == Subtract.diff || enemy == Multiply.product || enemy == Divide.quotient)
         {
-            Destroy(gameObject);
+            Destroy(thisObject);
         }
     }
     void Update()
