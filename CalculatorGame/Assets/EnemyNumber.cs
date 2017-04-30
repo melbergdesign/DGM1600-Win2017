@@ -30,5 +30,9 @@ public class EnemyNumber : MonoBehaviour {
             Destroy(gameObject);
         }
     }
-	
+    void Update()
+    {
+        thisObject.transform.Translate(0,-0.3f,0);
+    }
+
 }
