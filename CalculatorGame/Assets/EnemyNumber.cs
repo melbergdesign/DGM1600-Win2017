@@ -8,10 +8,7 @@ public class EnemyNumber : MonoBehaviour {
     public Text enemyText;
     public string enemyDisplay;
 
-    public NewMathOperations Add;
-    public NewMathOperations Subtract;
-    public NewMathOperations Multiply;
-    public NewMathOperations Divide;
+    public EqualsButton equals;
 
     public GameObject thisObject;
 
@@ -25,14 +22,12 @@ public class EnemyNumber : MonoBehaviour {
 
     public void ValueCheck()
     {
-        if (enemy == Add.sum || enemy == Subtract.diff || enemy == Multiply.product || enemy == Divide.quotient)
+        if (enemy == equals.sum || enemy == equals.diff || enemy == equals.prod || enemy == equals.quot)
         {
             Destroy(thisObject);
         }
     }
-    void Update()
-    {
-        //thisObject.transform.Translate(0,-0.3f,0);
-    }
+   
+    
 
 }

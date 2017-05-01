@@ -18,6 +18,11 @@ public class HoldList : MonoBehaviour {
         myHoldList.Add(num);
     }
 
+    public void ClearEntries()
+    {
+        myHoldList.Clear();
+    }
+
     public void PrintList()
     {
         print("This is in the list " + myHoldList[0]);

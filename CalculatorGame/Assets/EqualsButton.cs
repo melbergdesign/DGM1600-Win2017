@@ -9,31 +9,81 @@ public class EqualsButton : MonoBehaviour {
 
     public HoldList EntryList;
 
+    public float sum;
+    public float diff;
+    public float prod;
+    public float quot;
+
+    public TextEntry Entry1;
     public TextEntry Entry2;
 
-	public void OnClick()
+    public SolutionDisplay mySolDisplay;
+
+    public EnemyNumber firstEnemy;
+    public EnemyNumber secondEnemy;
+    public EnemyNumber thirdEnemy;
+    public EnemyNumber fourthEnemy;
+
+    public void OnClick()
     {
         EntryList.AddToList(float.Parse(Entry2.numberEntry2.text));
 
         if (add)
         {
-            print("Add");
+            //print("Add");
+            sum = EntryList.myHoldList[0] + EntryList.myHoldList[1];
+            print(sum);
+            mySolDisplay.Solution.text = sum.ToString();
+            AnswerCheck();
+            ResetEntries();
             add = false;
         }
         if (subtract)
         {
-            print("subtract");
+            //print("subtract");
+            diff = EntryList.myHoldList[0] - EntryList.myHoldList[1];
+            print(diff);
+            mySolDisplay.Solution.text = diff.ToString();
+            AnswerCheck();
+            ResetEntries();
             subtract = false;
         }
         if (multiply)
         {
-            print("multiply");
+            //print("multiply");
+            prod = EntryList.myHoldList[0] * EntryList.myHoldList[1];
+            print(prod);
+            mySolDisplay.Solution.text = prod.ToString();
+            AnswerCheck();
+            ResetEntries();
             multiply = false;
         }
         if (divide)
         {
-            print("divide");
+            //print("divide");
+            quot = EntryList.myHoldList[0] / EntryList.myHoldList[1];
+            print(quot);
+            mySolDisplay.Solution.text = quot.ToString();
+            AnswerCheck();
+            ResetEntries();
             divide = false;
         }
+    }
+    public void AnswerCheck()
+    {
+        firstEnemy.ValueCheck();
+        secondEnemy.ValueCheck();
+        thirdEnemy.ValueCheck();
+        fourthEnemy.ValueCheck();
+    }
+
+    public void ResetEntries()
+    {
+        EntryList.ClearEntries();
+        Entry1.numberEntry.text = null;
+        Entry2.numberEntry2.text = null;
+        Entry2.numberEntry2.interactable = false;
+        Entry1.charList.Clear();
+        Entry2.charList.Clear();
     }
 }

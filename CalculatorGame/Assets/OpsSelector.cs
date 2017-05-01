@@ -18,4 +18,29 @@ public class OpsSelector : MonoBehaviour {
         thisButton.interactable = false;
         Entry2.numberEntry2.interactable = true;
     }
+
+    public void SubtractButtonClick()
+    {
+        equals.subtract = true;
+        print(Entry1.numberEntry.text);
+        EntryList.AddToList(float.Parse(Entry1.numberEntry.text));
+        thisButton.interactable = false;
+        Entry2.numberEntry2.interactable = true;
+    }
+    public void MultButtonClick()
+    {
+        equals.multiply = true;
+        print(Entry1.numberEntry.text);
+        EntryList.AddToList(float.Parse(Entry1.numberEntry.text));
+        thisButton.interactable = false;
+        Entry2.numberEntry2.interactable = true;
+    }
+    public void DivButtonClick()
+    {
+        equals.divide = true;
+        print(Entry1.numberEntry.text);
+        EntryList.AddToList(float.Parse(Entry1.numberEntry.text));
+        thisButton.interactable = false;
+        Entry2.numberEntry2.interactable = true;
+    }
 }
