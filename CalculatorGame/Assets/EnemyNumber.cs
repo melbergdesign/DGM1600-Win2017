@@ -12,9 +12,14 @@ public class EnemyNumber : MonoBehaviour {
 
     public GameObject thisObject;
 
-	// Use this for initialization
-	void Start () {
-        enemy = Random.Range(0, 99);
+    
+
+    
+
+    // Use this for initialization
+    void Start () {
+
+        enemy = Random.Range(1, 20);
         print("Enemy is " + enemy);
         enemyDisplay = enemy.ToString();
         enemyText.text = enemyDisplay;
@@ -25,9 +30,9 @@ public class EnemyNumber : MonoBehaviour {
         if (enemy == equals.sum || enemy == equals.diff || enemy == equals.prod || enemy == equals.quot)
         {
             Destroy(thisObject);
+
+                     
         }
     }
-   
-    
 
 }

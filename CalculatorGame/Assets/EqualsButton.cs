@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class EqualsButton : MonoBehaviour {
     public bool add;
@@ -24,6 +25,10 @@ public class EqualsButton : MonoBehaviour {
     public EnemyNumber thirdEnemy;
     public EnemyNumber fourthEnemy;
 
+    public GameObject[] gos;
+
+    public Text gameOver;
+
     public void OnClick()
     {
         EntryList.AddToList(float.Parse(Entry2.numberEntry2.text));
@@ -36,6 +41,7 @@ public class EqualsButton : MonoBehaviour {
             mySolDisplay.Solution.text = sum.ToString();
             AnswerCheck();
             ResetEntries();
+            Win();
             add = false;
         }
         if (subtract)
@@ -46,6 +52,7 @@ public class EqualsButton : MonoBehaviour {
             mySolDisplay.Solution.text = diff.ToString();
             AnswerCheck();
             ResetEntries();
+            Win();
             subtract = false;
         }
         if (multiply)
@@ -56,6 +63,7 @@ public class EqualsButton : MonoBehaviour {
             mySolDisplay.Solution.text = prod.ToString();
             AnswerCheck();
             ResetEntries();
+            Win();
             multiply = false;
         }
         if (divide)
@@ -66,6 +74,7 @@ public class EqualsButton : MonoBehaviour {
             mySolDisplay.Solution.text = quot.ToString();
             AnswerCheck();
             ResetEntries();
+            Win();
             divide = false;
         }
     }
@@ -85,5 +94,16 @@ public class EqualsButton : MonoBehaviour {
         Entry2.numberEntry2.interactable = false;
         Entry1.charList.Clear();
         Entry2.charList.Clear();
+    }
+
+    public void Win()
+    {
+        gos = GameObject.FindGameObjectsWithTag("Enemy");
+
+        if (gos.Length == 1)
+        {
+            gameOver.text = "YOU WIN!";
+            gameOver.enabled = true;
+        }
     }
 }
