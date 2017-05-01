@@ -22,17 +22,21 @@ public class NewMathOperations : MonoBehaviour {
     public EnemyNumber thirdEnemy;
     public EnemyNumber fourthEnemy;
 
+    public TextEntry Entry1;
+    public TextEntry Entry2;
+
     public void AddButtonClick()
     {
-        sum = EntryList.myHoldList[0] + EntryList.myHoldList[1];
+        //sum = EntryList.myHoldList[0] + EntryList.myHoldList[1];
         
-        print("The sum is " + sum);
+        //print("The sum is " + sum);
 
-        MySolDisplay.Solution.text = sum.ToString();
+        //MySolDisplay.Solution.text = sum.ToString();
 
         //Set interactable to false
         thisButton.interactable = false;
-        firstEnemy.ValueCheck();
+        Entry2.numberEntry2.interactable = true;
+        //firstEnemy.ValueCheck();
     }
 
     public void SubtractButtonClick()
