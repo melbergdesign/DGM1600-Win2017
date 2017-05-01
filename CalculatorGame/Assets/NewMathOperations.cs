@@ -28,14 +28,16 @@ public class NewMathOperations : MonoBehaviour {
     public void AddButtonClick()
     {
         //sum = EntryList.myHoldList[0] + EntryList.myHoldList[1];
-        
+
         //print("The sum is " + sum);
 
         //MySolDisplay.Solution.text = sum.ToString();
 
         //Set interactable to false
+        EntryList.AddToList(float.Parse(Entry1.numberEntry.text));
         thisButton.interactable = false;
         Entry2.numberEntry2.interactable = true;
+
         //firstEnemy.ValueCheck();
     }
 

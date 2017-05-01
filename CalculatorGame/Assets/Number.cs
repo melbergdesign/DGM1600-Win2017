@@ -8,8 +8,12 @@ public class Number : MonoBehaviour {
     //number buttons
 
 	public int numButton;
+    public string entry;
+
     public TextEntry numEntry;
     public TextEntry num2Entry;
+
+    public HoldList NumberList;
 
     
 	public void OnClick()
@@ -37,7 +41,9 @@ public class Number : MonoBehaviour {
             //print(i);
             builder.Append(i);
         }
-        numEntry.numberEntry.text = builder.ToString();
+        entry = builder.ToString();
+        //print(entry);
+        numEntry.numberEntry.text = entry;
     }
 
 	public void AddToEntry2()
@@ -54,6 +60,7 @@ public class Number : MonoBehaviour {
             //print(i);
             builder.Append(i);
         }
-        num2Entry.numberEntry2.text = builder.ToString();
+        entry = builder.ToString();
+        num2Entry.numberEntry2.text = entry;
     }
 }

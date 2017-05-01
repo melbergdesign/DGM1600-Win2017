@@ -13,8 +13,9 @@ public class HoldList : MonoBehaviour {
       
 	public void AddToList(float num)
     {
-        myHoldList.Insert(0, myEntry1.numEntered);
-        myHoldList.Insert(1, myEntry2.numEntered);
+        //myHoldList.Insert(0, myEntry1.numEntered);
+        //myHoldList.Insert(1, myEntry2.numEntered);
+        myHoldList.Add(num);
     }
 
     public void PrintList()

@@ -7,8 +7,14 @@ public class EqualsButton : MonoBehaviour {
     public bool multiply;
     public bool divide;
 
+    public HoldList EntryList;
+
+    public TextEntry Entry2;
+
 	public void OnClick()
     {
+        EntryList.AddToList(float.Parse(Entry2.numberEntry2.text));
+
         if (add)
         {
             print("Add");

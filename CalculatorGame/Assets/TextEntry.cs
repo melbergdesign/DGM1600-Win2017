@@ -22,13 +22,16 @@ public class TextEntry : MonoBehaviour {
         numberEntry2.interactable = false;
     }
 
-    public void PrintEntry()
+    /*public void PrintEntry()
     {
         numEntered = float.Parse(numberEntry.text);
 
         //print("This is a float " + numEntered);
         entryList.AddToList(numEntered);
+
+        numEntered = float.Parse(numberEntry2.text);
+        //entryList.AddToList(numEntered);
         
-    }
+    }*/
 
 }
